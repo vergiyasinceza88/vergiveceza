@@ -3,7 +3,7 @@ import { ArrowUpRight, ChevronRight, ShieldCheck } from 'lucide-react'
 
 const credentials = [
   { label: 'Atatürk Üniversitesi', title: 'Adalet' },
-  { label: 'Marmara Üniversitesi', title: 'İktisat' },
+  { label: 'Marmara Üniversitesi', title: 'İktisatt' },
   { label: 'Anadolu Üniversitesi', title: 'Dış Ticaret' },
   { label: 'Deneyim', title: '10+ Yıllık Tecrübe' },
 ]
