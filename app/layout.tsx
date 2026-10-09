@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     'Vergi inceleme, sahte belge iddiaları, uzlaşma, dava dilekçeleri ve istinaf süreçlerinde uzman destek.',
   generator: 'v0.app',
   icons: {
-    icon: [{ url: '/images/logo-vc.png', type: 'image/png' }],
+    icon: [
+      { url: '/icon-dark-32x32.png', type: 'image/png', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
+      { url: '/icon-light-32x32.png', type: 'image/png', sizes: '32x32', media: '(prefers-color-scheme: light)' },
+    ],
     apple: '/apple-icon.png',
   },
 }
