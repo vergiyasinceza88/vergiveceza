@@ -10,7 +10,7 @@ const actions = [
 export function QuickActions() {
   return (
     <section aria-label="Hızlı işlemler" className="mx-auto max-w-7xl px-5 md:px-8">
-      <ul className="grid gap-5 sm:grid-cols-3">
+      <ul className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
         {actions.map((action, i) => {
           const tone = coolTones[i]
           const Icon = action.icon
