@@ -28,7 +28,7 @@ export function Precedents() {
         description="Dosyanıza ışık tutabilecek karar örnekleri ve hukuki değerlendirmeler. İçerikler düzenli olarak güncellenmektedir."
       />
 
-      <ul className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mt-16 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
         {precedents.map((item, i) => {
           const tone = warmTones[i % warmTones.length]
           return (
