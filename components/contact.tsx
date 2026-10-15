@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import type { SVGProps } from 'react'
-import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
 import { coolTones } from '@/lib/tones'
+import { ContactForm } from './contact-form'
 
 function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -40,13 +41,7 @@ export function Contact() {
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
               Vergi uyuşmazlıklarında süreler kritiktir. Tebligatınızı aldıysanız vakit kaybetmeden iletişime geçin.
             </p>
-            <a
-              href="mailto:vergiveceza@gmail.com?subject=Randevu%20Talebi"
-              className="group mt-10 inline-flex items-center gap-4 rounded-2xl bg-primary px-7 py-4 text-base font-bold text-primary-foreground shadow-xl shadow-primary/25 transition hover:-translate-y-0.5"
-            >
-              Randevu talebi gönder
-              <ArrowUpRight className="size-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
-            </a>
+            <ContactForm />
           </div>
 
           <ul className="grid gap-4">

@@ -73,26 +73,26 @@ export function PracticeAreas() {
         description="Sahte belge iddiaları ve vergi incelemeleri sonrasında, firmanızın seçeneklerini ve izleyebileceği süreci birlikte değerlendirelim."
       />
 
-      <ul className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mt-16 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
         {areas.map((area, i) => {
           const tone = coolTones[i % coolTones.length]
           const Icon = area.icon
           return (
             <li key={area.title}>
               <article
-                className={`group relative flex h-full flex-col rounded-3xl p-6 shadow-[0_18px_40px_-24px_rgba(20,33,61,0.35)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_30px_55px_-25px_rgba(20,33,61,0.45)] ${tone.card}`}
+                className={`group relative flex h-full flex-col rounded-2xl p-4 shadow-[0_18px_40px_-24px_rgba(20,33,61,0.35)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_30px_55px_-25px_rgba(20,33,61,0.45)] sm:rounded-3xl sm:p-6 ${tone.card}`}
               >
                 <div className="flex items-start justify-between">
-                  <span className={`flex size-16 items-center justify-center rounded-full ${tone.blob} ${tone.icon}`}>
-                    <Icon className="size-7" strokeWidth={1.8} aria-hidden="true" />
+                  <span className={`flex size-12 items-center justify-center rounded-full sm:size-16 ${tone.blob} ${tone.icon}`}>
+                    <Icon className="size-6 sm:size-7" strokeWidth={1.8} aria-hidden="true" />
                   </span>
                   <span className={`text-sm font-bold tabular-nums ${tone.title} opacity-60`}>
                     {String(i + 1).padStart(2, '0')}
                   </span>
                 </div>
 
-                <h3 className={`mt-8 text-xl font-bold ${tone.title}`}>{area.title}</h3>
-                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-foreground/75">{area.desc}</p>
+                <h3 className={`mt-5 text-base font-bold leading-snug sm:mt-8 sm:text-xl ${tone.title}`}>{area.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/75 sm:text-[15px]">{area.desc}</p>
 
                 <a
                   href="#iletisim"
@@ -100,7 +100,7 @@ export function PracticeAreas() {
                 >
                   Detaylı bilgi
                   <ChevronRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-                  <span className="absolute inset-0 rounded-3xl" aria-hidden="true" />
+                  <span className="absolute inset-0 rounded-2xl sm:rounded-3xl" aria-hidden="true" />
                 </a>
               </article>
             </li>
