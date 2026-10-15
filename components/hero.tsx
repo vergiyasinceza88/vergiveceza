@@ -1,13 +1,6 @@
 import Image from 'next/image'
 import { ArrowUpRight, ChevronRight, ShieldCheck } from 'lucide-react'
 
-const credentials = [
-  { label: 'Atatürk Üniversitesi', title: 'Adalet' },
-  { label: 'Marmara Üniversitesi', title: 'İktisat' },
-  { label: 'Anadolu Üniversitesi', title: 'Dış Ticaret' },
-  { label: 'Deneyim', title: '10+ Yıllık Tecrübe' },
-]
-
 export function Hero() {
   return (
     <section className="px-3 pb-10 md:px-6">
@@ -30,9 +23,8 @@ export function Hero() {
 
             <h1 className="mt-8 font-serif text-6xl font-bold leading-[0.95] tracking-tight text-foreground text-balance sm:text-7xl lg:text-8xl">
               VERGİ VE
-              <span className="mt-2 flex items-center gap-6 italic text-primary">
+              <span className="mt-2 flex items-center gap-6 text-primary">
                 CEZA
-                <span className="hidden h-1.5 w-28 rounded-full bg-primary sm:block" aria-hidden="true" />
               </span>
             </h1>
 
@@ -75,13 +67,10 @@ export function Hero() {
 
             <div className="mt-6 flex items-center gap-4 rounded-2xl bg-white/50 px-5 py-4 ring-1 ring-white/80 backdrop-blur-sm">
               <ShieldCheck className="size-7 shrink-0 text-primary" aria-hidden="true" />
-              <dl className="grid flex-1 grid-cols-2 gap-x-4 gap-y-3">
-                {credentials.map((item, index) => (
-                  <div key={item.title} className={index % 2 === 1 ? 'border-l border-border pl-4' : ''}>
-                    <dt className="text-xs leading-snug text-muted-foreground">{item.label}</dt>
-                    <dd className="font-bold leading-snug text-foreground">{item.title}</dd>
-                  </div>
-                ))}
+              <dl className="grid flex-1 grid-cols-2 gap-x-4 gap-y-2">
+                <dt className="col-span-2 text-xs leading-snug text-muted-foreground">Deneyim</dt>
+                <dd className="font-bold leading-snug text-foreground">10+ Yıllık Tecrübe</dd>
+                <dd className="border-l border-border pl-4 font-bold leading-snug text-foreground">100+ Destek</dd>
               </dl>
             </div>
           </div>
