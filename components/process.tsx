@@ -24,7 +24,7 @@ export function Process() {
           </p>
         </div>
 
-        <ol className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-16 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">
           {steps.map((step, i) => (
             <li key={step.title} className="rounded-3xl bg-white/[0.06] p-7 ring-1 ring-white/10 transition hover:bg-white/[0.1]">
               <span className="font-serif text-5xl font-bold italic text-[#c3d6ee]">{String(i + 1).padStart(2, '0')}</span>
